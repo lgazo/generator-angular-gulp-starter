@@ -1,0 +1,20 @@
+{
+  "name": "generator-angular-gulp-starter",
+  "version": "1.0.0",
+  "description": "Generator for applications utilizing AngularJS and gulp-starter builds",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lgazo/generator-angular-gulp-starter.git"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Ladislav Gazo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lgazo/generator-angular-gulp-starter/issues"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.17.7"
+  }
+}
