@@ -1,0 +1,57 @@
+{
+  "name": "<%= app_name %>",
+  "version": "<%= version %>",
+  "description": "Supercharged <%= app_name %>",
+  "browser": {
+    "underscore": "backbone/node_modules/underscore",
+    "plugin": "./src/javascript/vendor/jquery-plugin.js"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      "coffeeify",
+      "hbsfy"
+    ]
+  },
+  "browserify-shim": {
+    "plugin": {
+      "exports": "plugin",
+      "depends": [
+        "jquery:$"
+      ]
+    }
+  },
+  "devDependencies": {
+    "browser-sync": "~1.3.6",
+    "browserify": "~5.10.1",
+    "browserify-shim": "~3.7.0",
+    "coffeeify": "~0.7.0",
+    "gulp": "^3.8.7",
+    "gulp-changed": "^0.4.1",
+    "gulp-clean": "~0.3.1",
+    "gulp-concat": "^2.4.1",
+    "gulp-if": "~1.2.5",
+    "gulp-imagemin": "^0.6.2",
+    "gulp-ng-annotate": "~0.3.3",
+    "gulp-notify": "^1.4.2",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-sass": "^1.1.0",
+    "gulp-sourcemaps": "^1.2.4",
+    "gulp-uglify": "~1.0.1",
+    "gulp-util": "^3.0.0",
+    "handlebars": "^1.3.0",
+    "hbsfy": "~2.0.0",
+    "pretty-hrtime": "~0.2.1",
+    "require-dir": "^0.1.0",
+    "vinyl-source-stream": "~0.1.1",
+    "watchify": "~1.0.2",
+    "gulp-ng-annotate": "~0.3.3",
+    "gulp-if": "~1.2.5",
+    "http-rewrite-middleware": "~0.1.6",
+    "gulp-starter": "/usr/local/lib/node_modules/gulp-starter"
+  },
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "jquery": "~2.1.0"
+  }
+}
