@@ -34,8 +34,8 @@ module.exports = yeoman.generators.Base.extend({
 			type: 'checkbox',
 			name: 'js_frameworks',
 			message: 'JavaScript framework libraries to include',
-			'default': ['angular', 'angular-animate', 'angular-route', 'angular-resource', 'jquery'],
-			choices: ['angular', 'angular-animate', 'angular-route', 'angular-resource', 'jquery']
+			'default': ['angular', 'angular-animate', 'angular-route', 'angular-ui-router', 'angular-resource', 'jquery'],
+			choices: ['angular', 'angular-animate', 'angular-ui-router', 'angular-resource', 'jquery']
 		},
 		{
 			type: 'checkbox',
@@ -104,6 +104,9 @@ module.exports = yeoman.generators.Base.extend({
 		this.template('src/partials/dashboard/_index.html', 'src/partials/dashboard/index.html', this.context);
 		
 		this.template('src/sass/_app.sass', 'src/sass/app.sass', this.context);
+	},
+	store: function() {
+		this.config.set('context', this.context)
 	}
 	
 });
